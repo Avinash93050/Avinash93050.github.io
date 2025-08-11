@@ -7,61 +7,97 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Hero Section -->
+  <!-- Header / Hero -->
   <header class="hero">
     <div class="hero-content">
       <h1>Professional Textile & Cloth Stitching Services</h1>
       <p>Bulk Wholesale & Retail | Quality · Speed · Reliability</p>
       <a href="#booking" class="cta-btn">Book Now</a>
-      <a href="#contact" class="cta-btn-visit">Visit Our Shop</a>
+      <a href="#shop-visit" class="cta-btn-visit">Visit Our Shop</a>
     </div>
   </header>
 
-  <!-- Services Section -->
+  <!-- Services -->
   <section class="services">
     <h2>Our Services</h2>
     <div class="service-list">
       <div class="service">
         <h3>Bulk Stitching</h3>
-        <p>We handle bulk orders for garments, uniforms, home textiles, and more, ensuring timely delivery and top-notch quality.</p>
+        <p>Bulk orders for garments, uniforms, and home textiles with top quality.</p>
       </div>
       <div class="service">
         <h3>Retail Stitching</h3>
-        <p>Customized tailoring for all fabric types, from daily wear to designer pieces</p>
+        <p>Custom tailoring for all fabric types — no order too small.</p>
       </div>
       <div class="service">
-        <h3>Product Variety</h3>
-        <p>Shirts, pants, dresses, uniforms, bed sheets, curtains, and all textile products—stitched with expertise.</p>
+        <h3>Variety</h3>
+        <p>Shirts, dresses, uniforms, bed sheets, curtains, and more.</p>
       </div>
     </div>
   </section>
 
-  <!-- Booking Section -->
+  <!-- Booking -->
   <section id="booking" class="booking-section">
     <h2>Book Your Stitching Service</h2>
-    <form class="booking-form" autocomplete="on">
+    <form class="booking-form">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="tel" name="phone" placeholder="Phone Number" required>
       <input type="email" name="email" placeholder="Email (optional)">
       <textarea name="details" placeholder="Service Details / Quantity" required></textarea>
       <button type="submit">Submit Booking</button>
     </form>
-    <p class="form-note">We respond quickly via call or email.</p>
+    <p class="form-note">We’ll contact you shortly after your request.</p>
   </section>
 
-  <!-- Visit Us Section -->
-  <section class="visit-us" id="shop-visit">
+  <!-- Shop Location with Google Map -->
+  <section class="shop-location" id="shop-visit">
     <h2>Visit Our Shop</h2>
-    <p>We welcome you for order discussion, sample viewing, or personal consultation.</p>
-    <a href="#contact" class="visit-btn">Get Directions / Contact</a>
+    <p class="address">
+      Inner side of Shivaji Market, near Arora Wool Store,<br>
+      Indira Nagar, Lucknow - 226016
+    </p>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.099792192207!2d80.98649277623663!3d26.86588196275406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd6ec64865b5%3A0x82d7085b6b8ec9ac!2sShivaji%20Market%2C%20Indira%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh%20226016!5e0!3m2!1sen!2sin!4v1691680000000!5m2!1sen!2sin"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Customer Reviews -->
+  <section class="reviews">
+    <h2>What Our Clients Say</h2>
+    <div class="review-list">
+      <div class="review">
+        <p>"Excellent stitching quality and timely delivery!"</p>
+        <span>- Ramesh Kumar</span>
+      </div>
+      <div class="review">
+        <p>"Great service and customization exactly as requested."</p>
+        <span>- Priya Singh</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Do you deliver orders outside Lucknow?</h3>
+      <p>Yes, we arrange delivery for wholesale and retail orders across India.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What’s your average delivery time?</h3>
+      <p>Usually 3–7 days depending on the order quantity and type.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
   <section class="contact-section" id="contact">
     <h2>Contact Us</h2>
-    <div class="contact-details">
-      <p><strong>Phone:</strong> <a href="tel:9305087357">9305087357</a></p>
-      <p><strong>Email:</strong> <a href="mailto:avinash6306797513@gmail.com">avinash6306797513@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:9305087357">9305087357</a></p>
+    <p><strong>Email:</strong> <a href="mailto:avinash6306797513@gmail.com">avinash6306797513@gmail.com</a></p>
+    <div class="social-links">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
     </div>
   </section>
 
@@ -70,7 +106,6 @@
   </footer>
 
   <script>
-    // Simple alert on booking form submit (replace with backend as needed)
     document.querySelector('.booking-form').addEventListener('submit', function(e){
       e.preventDefault();
       alert('Thank you for booking! We will contact you soon.');
